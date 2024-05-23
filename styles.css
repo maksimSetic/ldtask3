@@ -24,12 +24,25 @@ body {
   margin-right: 0px;
 }
 
-.swiper-slide:nth-child(2n) {
+.swiper-slide:nth-child(2) {
   margin-left: 20px;
 }
 
-.swiper-slide:nth-child(5n) {
-  margin-left: 35px;
+.swiper-slide:nth-child(4) {
+  margin-right: 25px;
+}
+
+.swiper-slide:nth-child(5) {
+  margin-right: 15px;
+  margin-left: 20px;
+}
+
+.swiper-slide:nth-child(6) {
+  margin-right: 15px;
+}
+
+.swiper-slide:nth-child(8) {
+  margin-left: 15px;
 }
 
 .swiper-button-prev {
@@ -37,7 +50,7 @@ body {
   height: 30px !important;
   width: 30px !important;
   background-color: #222222 !important;
-  padding-left: 20px;
+  padding: 8px;
 }
 
 .swiper-button-next {
@@ -45,5 +58,33 @@ body {
   height: 30px !important;
   width: 30px !important;
   background-color: #222222 !important;
-  padding-left: 20px;
+  padding: 6px;
+}
+
+.swiper .swiper-slide {
+  margin-right: 0;
+}
+
+@media (min-width: 320px) {
+  .swiper .swiper-slide {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 500px) {
+  .swiper .swiper-slide {
+    margin-right: clamp(3px, 0.75vw, 6px);
+  }
+}
+
+@media (min-width: 640px) {
+  .swiper .swiper-slide {
+    margin-right: clamp(4px, 1vw, 7px);
+  }
+}
+
+@media (min-width: 880px) {
+  .swiper .swiper-slide {
+    margin-right: clamp(5px, 1.25vw, 8px);
+  }
 }
